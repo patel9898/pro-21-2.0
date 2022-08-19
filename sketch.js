@@ -91,9 +91,7 @@ function draw() {
     if(path.x < 0 ){
       path.x = width/2;
     }
-    if(score>0 && score%100 === 0){
-      cycleBellSound.play() 
-    }
+    
       //code to play cycle bell sound
     if(keyDown("space")) {
       cycleBell.play();
