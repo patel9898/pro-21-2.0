@@ -80,7 +80,7 @@ function draw() {
     if(gameState===PLAY){
       
      distance = distance + Math.round(getFrameRate()/50);
-     path.velocityX = -(6 + 2*distance/150);
+     path.velocityX = -(6 + 2*distance/100);
     
      mainCyclist.y = World.mouseY;
     
@@ -133,7 +133,7 @@ function draw() {
     
       textSize(20);
       fill(255);
-      text("Press Up Arrow to Restart the game!", 500,200);
+      text("Press Enter to Restart the game!", 500,200);
     
       path.velocityX = 0;
       mainCyclist.velocityY = 0;
@@ -150,7 +150,7 @@ function draw() {
       
     
   
-       if(keyDown("UP_ARROW")) {
+       if(keyDown("enter")) {
          reset();
        }
   }
